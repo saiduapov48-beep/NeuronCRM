@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены - NeuronCRM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header glass">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path>
+                    </svg>
+                </div>
+                <span>NeuronCRM</span>
+            </a>
+            
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="features.html" class="nav-link">Возможности</a>
+                <a href="integrations.html" class="nav-link">Интеграции</a>
+                <a href="pricing.html" class="nav-link active">Цены</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="btn btn-ghost">Войти</a>
+                <a href="register.html" class="btn btn-primary">Регистрация</a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Простые и <span class="gradient-text">прозрачные цены</span></h1>
+            <p class="page-description">
+                Выберите тариф, который подходит вашему бизнесу. Без скрытых платежей.
+            </p>
+        </div>
+    </section>
+
+    <!-- Billing Toggle -->
+    <section class="billing-toggle-section">
+        <div class="container">
+            <div class="billing-toggle glass">
+                <button class="toggle-btn active" data-period="monthly">Ежемесячно</button>
+                <button class="toggle-btn" data-period="yearly">Ежегодно <span class="discount-badge">-20%</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-grid-large">
+                <!-- Starter Plan -->
+                <div class="pricing-card glass">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Стартовый</h3>
+                        <p class="pricing-description">Для небольших команд и стартапов</p>
+                        <div class="pricing-price">
+                            <span class="price" data-monthly="990" data-yearly="790">990</span>
+                            <span class="currency">&#8381;</span>
+                            <span class="period">/пользователь/месяц</span>
+                        </div>
+                    </div>
+                    <a href="register.html" class="btn btn-outline btn-block">Начать бесплатно</a>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            До 5 пользователей
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            1 000 контактов
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            100 автоматизаций/месяц
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Базовые интеграции
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Email-поддержка
+                        </li>
+                        <li class="disabled">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            ИИ-аналитика
+                        </li>
+                        <li class="disabled">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            API доступ
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="pricing-card glass popular">
+                    <div class="popular-badge">Популярный</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Профессиональный</h3>
+                        <p class="pricing-description">Лучший выбор для растущего бизнеса</p>
+                        <div class="pricing-price">
+                            <span class="price" data-monthly="2990" data-yearly="2390">2 990</span>
+                            <span class="currency">&#8381;</span>
+                            <span class="period">/пользователь/месяц</span>
+                        </div>
+                    </div>
+                    <a href="register.html" class="btn btn-primary btn-block">Начать бесплатно</a>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            До 25 пользователей
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            10 000 контактов
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Безлимитные автоматизации
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Все интеграции
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            ИИ-аналитика и прогнозы
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Приоритетная поддержка
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            API доступ
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card glass">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Корпоративный</h3>
+                        <p class="pricing-description">Для крупных организаций</p>
+                        <div class="pricing-price">
+                            <span class="price-custom">По запросу</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-block">Связаться с нами</a>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Безлимит пользователей
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Безлимит контактов
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Кастомные интеграции
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Выделенный сервер
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            SSO и LDAP
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            Персональный менеджер
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            SLA 99.99%
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Comparison -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Сравнение тарифов</h2>
+            
+            <div class="comparison-table glass">
+                <div class="comparison-header">
+                    <div class="comparison-feature">Функция</div>
+                    <div class="comparison-plan">Стартовый</div>
+                    <div class="comparison-plan">Профессиональный</div>
+                    <div class="comparison-plan">Корпоративный</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">Пользователи</div>
+                    <div class="comparison-value">До 5</div>
+                    <div class="comparison-value">До 25</div>
+                    <div class="comparison-value">Безлимит</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">Контакты</div>
+                    <div class="comparison-value">1 000</div>
+                    <div class="comparison-value">10 000</div>
+                    <div class="comparison-value">Безлимит</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">Автоматизации</div>
+                    <div class="comparison-value">100/месяц</div>
+                    <div class="comparison-value">Безлимит</div>
+                    <div class="comparison-value">Безлимит</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">ИИ-аналитика</div>
+                    <div class="comparison-value">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-no"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </div>
+                    <div class="comparison-value">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-yes"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <div class="comparison-value">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-yes"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">API доступ</div>
+                    <div class="comparison-value">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-no"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </div>
+                    <div class="comparison-value">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-yes"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <div class="comparison-value">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-yes"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-feature">Поддержка</div>
+                    <div class="comparison-value">Email</div>
+                    <div class="comparison-value">Приоритетная</div>
+                    <div class="comparison-value">Персональный менеджер</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item glass">
+                    <h3>Могу ли я сменить тариф?</h3>
+                    <p>Да, вы можете изменить тариф в любое время. При переходе на более дорогой тариф изменения вступят в силу сразу. При понижении тарифа изменения применятся в следующем платёжном периоде.</p>
+                </div>
+                
+                <div class="faq-item glass">
+                    <h3>Есть ли бесплатный пробный период?</h3>
+                    <p>Да, мы предлагаем 14 дней бесплатного использования на любом тарифе без ограничений. Карта для регистрации не требуется.</p>
+                </div>
+                
+                <div class="faq-item glass">
+                    <h3>Какие способы оплаты вы принимаете?</h3>
+                    <p>Мы принимаем банковские карты (Visa, Mastercard, МИР), оплату по счёту для юридических лиц и электронные кошельки.</p>
+                </div>
+                
+                <div class="faq-item glass">
+                    <h3>Можно ли получить возврат?</h3>
+                    <p>Да, в течение первых 30 дней после оплаты вы можете запросить полный возврат средств без объяснения причин.</p>
+                </div>
+                
+                <div class="faq-item glass">
+                    <h3>Есть ли скидки для НКО и образовательных учреждений?</h3>
+                    <p>Да, мы предоставляем специальные условия для некоммерческих организаций и учебных заведений. Свяжитесь с нами для получения индивидуального предложения.</p>
+                </div>
+                
+                <div class="faq-item glass">
+                    <h3>Что происходит с данными при отмене подписки?</h3>
+                    <p>Ваши данные сохраняются в течение 90 дней после отмены подписки. В любой момент вы можете экспортировать все данные или возобновить подписку.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content container">
+            <h2 class="cta-title">Готовы попробовать NeuronCRM?</h2>
+            <p class="cta-description">
+                14 дней бесплатно. Без карты. Отмена в любой момент.
+            </p>
+            <div class="cta-actions">
+                <a href="register.html" class="btn btn-primary btn-lg">Начать бесплатно</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path>
+                            </svg>
+                        </div>
+                        <span>NeuronCRM</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Умная CRM-система нового поколения для автоматизации вашего бизнеса.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Продукт</h4>
+                    <ul>
+                        <li><a href="features.html">Возможности</a></li>
+                        <li><a href="integrations.html">Интеграции</a></li>
+                        <li><a href="pricing.html">Цены</a></li>
+                        <li><a href="#">Обновления</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Статус системы</a></li>
+                        <li><a href="#">Связаться</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>2024 NeuronCRM. Все права защищены.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="VK">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.525-2.049-1.714-1.033-1.01-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.12-5.339-3.202-2.17-3.058-2.763-5.35-2.763-5.82 0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.814-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.049.17.474-.085.716-.576.716z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интеграции - NeuronCRM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header glass">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path>
+                    </svg>
+                </div>
+                <span>NeuronCRM</span>
+            </a>
+            
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="features.html" class="nav-link">Возможности</a>
+                <a href="integrations.html" class="nav-link active">Интеграции</a>
+                <a href="pricing.html" class="nav-link">Цены</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="btn btn-ghost">Войти</a>
+                <a href="register.html" class="btn btn-primary">Регистрация</a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">500+ <span class="gradient-text">Интеграций</span></h1>
+            <p class="page-description">
+                Подключайте NeuronCRM к любимым сервисам и работайте в единой экосистеме
+            </p>
+        </div>
+    </section>
+
+    <!-- Integration Categories -->
+    <section class="integrations-section">
+        <div class="container">
+            <!-- Category: Messengers -->
+            <div class="integration-category">
+                <div class="category-header">
+                    <h2 class="category-title">Мессенджеры</h2>
+                    <p class="category-description">Общайтесь с клиентами там, где им удобно</p>
+                </div>
+                <div class="integrations-grid">
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(0, 136, 204, 0.15); color: #0088cc;">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </div>
+                        <h3>Telegram</h3>
+                        <p>Боты и уведомления</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(37, 211, 102, 0.15); color: #25D366;">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Business API</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(0, 119, 181, 0.15); color: #0077B5;">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.525-2.049-1.714-1.033-1.01-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.12-5.339-3.202-2.17-3.058-2.763-5.35-2.763-5.82 0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.814-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.049.17.474-.085.716-.576.716z"/>
+                            </svg>
+                        </div>
+                        <h3>ВКонтакте</h3>
+                        <p>Сообщества и чаты</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(114, 137, 218, 0.15); color: #7289DA;">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/>
+                            </svg>
+                        </div>
+                        <h3>Viber</h3>
+                        <p>Бизнес-сообщения</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Accounting -->
+            <div class="integration-category">
+                <div class="category-header">
+                    <h2 class="category-title">Учёт и бухгалтерия</h2>
+                    <p class="category-description">Синхронизируйте данные с учётными системами</p>
+                </div>
+                <div class="integrations-grid">
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(255, 221, 0, 0.15); color: #FFDD00;">
+                            <span style="font-weight: 700; font-size: 16px;">1C</span>
+                        </div>
+                        <h3>1С:Предприятие</h3>
+                        <p>Полная синхронизация</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(0, 166, 81, 0.15); color: #00A651;">
+                            <span style="font-weight: 700; font-size: 14px;">МС</span>
+                        </div>
+                        <h3>Мой Склад</h3>
+                        <p>Товары и остатки</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(255, 102, 0, 0.15); color: #FF6600;">
+                            <span style="font-weight: 700; font-size: 14px;">КБ</span>
+                        </div>
+                        <h3>Контур.Бухгалтерия</h3>
+                        <p>Документооборот</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(103, 58, 183, 0.15); color: #673AB7;">
+                            <span style="font-weight: 700; font-size: 14px;">ЭД</span>
+                        </div>
+                        <h3>СБИС</h3>
+                        <p>ЭДО и отчётность</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Telephony -->
+            <div class="integration-category">
+                <div class="category-header">
+                    <h2 class="category-title">Телефония</h2>
+                    <p class="category-description">Звоните прямо из CRM</p>
+                </div>
+                <div class="integrations-grid">
+                    <div class="integration-card glass">
+                        <div class="integration-icon cyan">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <h3>Mango Office</h3>
+                        <p>Виртуальная АТС</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon purple">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <h3>Sipuni</h3>
+                        <p>IP-телефония</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon cyan">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <h3>Ростелеком</h3>
+                        <p>Корпоративная связь</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon purple">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <h3>Zadarma</h3>
+                        <p>Облачная АТС</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Marketing -->
+            <div class="integration-category">
+                <div class="category-header">
+                    <h2 class="category-title">Маркетинг и рассылки</h2>
+                    <p class="category-description">Автоматизируйте маркетинговые кампании</p>
+                </div>
+                <div class="integrations-grid">
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(255, 225, 0, 0.15); color: #FFE100;">
+                            <span style="font-weight: 700; font-size: 14px;">MC</span>
+                        </div>
+                        <h3>Mailchimp</h3>
+                        <p>Email-рассылки</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(0, 123, 255, 0.15); color: #007BFF;">
+                            <span style="font-weight: 700; font-size: 14px;">US</span>
+                        </div>
+                        <h3>Unisender</h3>
+                        <p>Омниканальные рассылки</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(66, 103, 178, 0.15); color: #4267B2;">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </div>
+                        <h3>Facebook Ads</h3>
+                        <p>Таргетированная реклама</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(234, 67, 53, 0.15); color: #EA4335;">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                            </svg>
+                        </div>
+                        <h3>Google Ads</h3>
+                        <p>Контекстная реклама</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Payment -->
+            <div class="integration-category">
+                <div class="category-header">
+                    <h2 class="category-title">Платежи и эквайринг</h2>
+                    <p class="category-description">Принимайте оплату любым удобным способом</p>
+                </div>
+                <div class="integrations-grid">
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(255, 221, 45, 0.15); color: #FFDD2D;">
+                            <span style="font-weight: 700; font-size: 14px;">Т</span>
+                        </div>
+                        <h3>Тинькофф</h3>
+                        <p>Эквайринг</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(33, 150, 83, 0.15); color: #21A038;">
+                            <span style="font-weight: 700; font-size: 14px;">СБ</span>
+                        </div>
+                        <h3>Сбербанк</h3>
+                        <p>Приём платежей</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(0, 135, 205, 0.15); color: #0087CD;">
+                            <span style="font-weight: 700; font-size: 14px;">ЮК</span>
+                        </div>
+                        <h3>ЮKassa</h3>
+                        <p>Онлайн-платежи</p>
+                    </div>
+
+                    <div class="integration-card glass">
+                        <div class="integration-icon" style="background: rgba(99, 91, 255, 0.15); color: #635BFF;">
+                            <span style="font-weight: 700; font-size: 14px;">St</span>
+                        </div>
+                        <h3>Stripe</h3>
+                        <p>Международные платежи</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Integration -->
+    <section class="custom-integration">
+        <div class="container">
+            <div class="custom-card glass">
+                <div class="custom-content">
+                    <h2>Нужна особая интеграция?</h2>
+                    <p>Наша команда поможет подключить любой сервис через открытый API или разработать кастомное решение под ваши задачи.</p>
+                    <a href="#" class="btn btn-primary">Связаться с нами</a>
+                </div>
+                <div class="custom-visual">
+                    <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="url(#gradient)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#06b6d4"/>
+                                <stop offset="100%" style="stop-color:#a855f7"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                        <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                        <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content container">
+            <h2 class="cta-title">Начните интегрировать уже сегодня</h2>
+            <p class="cta-description">
+                Подключение большинства сервисов занимает менее 5 минут
+            </p>
+            <div class="cta-actions">
+                <a href="register.html" class="btn btn-primary btn-lg">Начать бесплатно</a>
+                <a href="pricing.html" class="btn btn-ghost-light btn-lg">Посмотреть цены</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"></path>
+                            </svg>
+                        </div>
+                        <span>NeuronCRM</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Умная CRM-система нового поколения для автоматизации вашего бизнеса.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Продукт</h4>
+                    <ul>
+                        <li><a href="features.html">Возможности</a></li>
+                        <li><a href="integrations.html">Интеграции</a></li>
+                        <li><a href="pricing.html">Цены</a></li>
+                        <li><a href="#">Обновления</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Статус системы</a></li>
+                        <li><a href="#">Связаться</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>2024 NeuronCRM. Все права защищены.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="VK">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.525-2.049-1.714-1.033-1.01-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.12-5.339-3.202-2.17-3.058-2.763-5.35-2.763-5.82 0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.814-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.049.17.474-.085.716-.576.716z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
